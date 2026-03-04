@@ -22,12 +22,12 @@ WINDOW_Y_NAME = "Imagem Gesto Y"
 
 # =================================================================
 #  ### PONTO PARA MUDAR AS IMAGENS ###
-#  Altere os caminhos "camera/image_x.png" e "camera/image_y.png"
+#  Altere os caminhos "macacodedonaboca.jpg" e "dedopracima.jpg"
 #  para os caminhos das suas imagens.
 # =================================================================
 try:
-    img_x = cv2.resize(cv2.imread("/home/arthur/Downloads/macacodedonaboca.jpg"), (400, 400))
-    img_y = cv2.resize(cv2.imread("/home/arthur/Downloads/dedopracima.jpg"), (400, 400))
+    img_x = cv2.resize(cv2.imread("macacodedonaboca.jpg"), (400, 400))
+    img_y = cv2.resize(cv2.imread("dedopracima.jpg"), (400, 400))
 except Exception as e:
     print(f"Erro ao carregar imagens: {e}")
     img_x, img_y = None, None
