@@ -26,16 +26,16 @@ Instale as dependências:
 pip install -r requirements.txt
 ```
 
-## Configurar imagens
+## Imagens
 
-No topo do arquivo `macacocamera.py`, altere os caminhos das imagens:
+As imagens já estão neste repositório e os caminhos estão hardcoded no topo do arquivo `macacocamera.py`:
 
 ```python
-img_x = cv2.resize(cv2.imread("/caminho/para/sua/imagem_x.jpg"), (400, 400))
-img_y = cv2.resize(cv2.imread("/caminho/para/sua/imagem_y.jpg"), (400, 400))
+img_x = cv2.resize(cv2.imread("macacodedonaboca.jpg"), (400, 400))
+img_y = cv2.resize(cv2.imread("dedopracima.jpg"), (400, 400))
 ```
 
-Se preferir, coloque as imagens na pasta do projeto e use caminhos relativos.
+Se quiser trocar as imagens, substitua os arquivos na raiz do projeto ou ajuste esses nomes no código.
 
 ## Execução
 
@@ -49,4 +49,3 @@ Pressione `q` para sair.
 
 - **Câmera não encontrada**: verifique se a webcam está conectada e se nenhum outro app está usando a câmera.
 - **Erro de biblioteca gráfica (Linux)**: em algumas distros pode ser necessário instalar pacotes do OpenCV/GL (ex.: `libgl1`).
-
